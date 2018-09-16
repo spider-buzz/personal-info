@@ -1,263 +1,386 @@
-<!doctype html>
-<html lang="en" class="no-js">
+<!doctype html>  
+<!--[if IE 6 ]><html lang="en-us" class="ie6"> <![endif]-->
+<!--[if IE 7 ]><html lang="en-us" class="ie7"> <![endif]-->
+<!--[if IE 8 ]><html lang="en-us" class="ie8"> <![endif]-->
+<!--[if (gt IE 7)|!(IE)]><!-->
+<html lang="en-us"><!--<![endif]-->
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
-
-	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
-	<link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
-	<link rel="stylesheet" href="css/magnific-popup.css"> <!-- Resource style -->
-	<script src="js/modernizr.js"></script> <!-- Modernizr -->
-	<title>eBlog Lite Theme Documentation</title>
+	<meta charset="utf-8">
+	
+	<title>Personal Info</title>
+	
+	<meta name="description" content="Personal Info is a modern feature-rich responsive Personal Information WordPress theme built with the best level of WooCommerce integration along with its extensions. The theme provides you unlimited customization possibilities, powerful support, top-notch beautiful design, and loads of awesome features. It is a complete WordPress template for creating an online shop/ store of any kind of eCommerce store. It is fully based on live WordPress Customizer which makes your task a lot easier. It features "stick menu, stick sidebar widget area, one click demo import, unlimited color options, team member section, offer deal product section,  unlimited slider settings – inbuilt slider and Slider Revolution premium plugin support, 13+ custom widgets etc". It is fully mobile-responsive, SEO optimized, multilingual theme that is an ideal choice for anyone and everyone.">
+	<meta name="author" content="SpiderBuzz">
+	<meta name="copyright" content="SpiderBuzz">
+	<meta name="generator" content="Documenter v2.0 http://rxa.li/documenter">
+	<meta name="date" content="2017-06-30T00:00:00+02:00">
+	
+	<link rel="stylesheet" href="assets/css/documenter_style.css" media="all">
+	
+	
+	
+	<script src="assets/js/jquery.js"></script>
+	
+	<script src="assets/js/jquery.scrollTo.js"></script>
+	<script src="assets/js/jquery.easing.js"></script>
+	
+	<script>document.createElement('section');var duration='500',easing='swing';</script>
+	<script src="assets/js/script.js"></script>
+	
+	<style>
+		html{background-color:#EEEEEE;color:#383838;}
+		::-moz-selection{background:#333636;color:#00DFFC;}
+		::selection{background:#333636;color:#00DFFC;}
+		#documenter_sidebar #documenter_logo{background-image:url();}
+		a{color:#008C9E;}
+		.btn {
+			border-radius:3px;
+		}
+		.btn-primary {
+			  background-image: -moz-linear-gradient(top, #008C9E, #006673);
+			  background-image: -ms-linear-gradient(top, #008C9E, #006673);
+			  background-image: -webkit-gradient(linear, 0 0, 0 008C9E%, from(#343838), to(#006673));
+			  background-image: -webkit-linear-gradient(top, #008C9E, #006673);
+			  background-image: -o-linear-gradient(top, #008C9E, #006673);
+			  background-image: linear-gradient(top, #008C9E, #006673);
+			  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#008C9E', endColorstr='#006673', GradientType=0);
+			  border-color: #006673 #006673 #bfbfbf;
+			  color:#FFFFFF;
+		}
+		.btn-primary:hover,
+		.btn-primary:active,
+		.btn-primary.active,
+		.btn-primary.disabled,
+		.btn-primary[disabled] {
+		  border-color: #008C9E #008C9E #bfbfbf;
+		  background-color: #006673;
+		}
+		hr{border-top:1px solid #D4D4D4;border-bottom:1px solid #FFFFFF;}
+		#documenter_sidebar, #documenter_sidebar ul a{background-color:#343838;color:#FFFFFF;}
+		#documenter_sidebar ul a{-webkit-text-shadow:1px 1px 0px #494F4F;-moz-text-shadow:1px 1px 0px #494F4F;text-shadow:1px 1px 0px #494F4F;}
+		#documenter_sidebar ul{border-top:1px solid #212424;}
+		#documenter_sidebar ul a{border-top:1px solid #494F4F;border-bottom:1px solid #212424;color:#FFFFFF;}
+		#documenter_sidebar ul a:hover{background:#333636;color:#00DFFC;border-top:1px solid #333636;}
+		#documenter_sidebar ul a.current{background:#333636;color:#00DFFC;border-top:1px solid #333636;}
+		#documenter_copyright{display:block !important;visibility:visible !important;}
+	</style>
+	
 </head>
+<body class="documenter-project-personal-info">
+	<div id="documenter_sidebar">
+		<a href="#documenter_cover" id="documenter_logo"></a>
+		<ul id="documenter_nav">
+			<li><a class="current" href="#documenter_cover">Getting Started</a></li>
+				
+			
+			<li><a href="#theme_installation" title="Theme Installation">Theme Installation</a></li>
+			<li><a href="#installing_plugins" title="Installing Plugins">Installing Plugins</a></li>
+			<li><a href="#general_settings" title="General Settings">General Settings</a></li>
+			<li><a href="#custom_menu" title="Custom Menu">Custom Menu</a></li>
+			<li><a href="#profile_page" title="Profile Page">Profile Page</a></li>
+			<li><a href="#resume_page" title="Resume Page">Resume Page</a></li>
+			<li><a href="#contact_us_page" title="Contact Us Page">Contact Us Page</a></li>
 
-<body>
-<header>
-	<div class="header-inner">
-		<div class="top-logo clearfix">
-			<div class="brand_logo text-left w50">
-				<p><img src="images/eblog-lite-logo.jpg"></p>
-			</div>
-			<div class="brand_menu text-right w50">
-				<ul>
-					<li><a target= "_blank" href="https://spiderbuzz.com/wordpress-themes/eblog-pro/">Buy Now</a></li>
-					<li><a target= "_blank" href="https://spiderbuzz.com/wordpress-themes/eblog-lite-wordpress-blog-theme/">Theme Details</a></li>
-					<li><a target= "_blank" href="https://spiderbuzz.com">Get Support</a></li>
-				</ul>
-			</div>
-		</div>
-		<div class="theme_doc">
-			<h1><span>eBlog Lite,</span> Theme documentation</h1>
-			<p>Below is the detailed documentation for the eBlog Lite Theme</p>
-		</div>
-		<div class="intro-theme">
-			<img src="images/eblog-lite.png">
+		</ul>
+		<div id="documenter_copyright">Copyright SpiderBuzz 2017<br>
+		made with the <a href="http://rxa.li/documenter">Documenter v2.0</a> 
 		</div>
 	</div>
-</header>
-<section class="cd-faq">
-	<ul class="cd-faq-categories">
-		<li><a href="#install_theme">Install Theme</a></li>
-		<li><a href="#menu_config">Menu Config</a></li>
-		<li><a href="#customizer_settings">Customizer Settings</a></li>
-		<li><a href="#support">Support</a></li>
-		<li><a href="#demo_import">Demo Import</a></li>
-		
-	</ul> <!-- cd-faq-categories -->
+	<div id="documenter_content">
+	<section id="documenter_cover">
+	<h1>Personal Info</h1>
+	
+	
+	<hr>
+	<ul>
+	<li>created: 06/28/2017</li>
+	<li>latest update: 06/30/2017</li>
+	<li>by: spiderbuzz</li>
+	<li><a href="https://www.spiderbuzz.com/">www.spiderbuzz.com/</a></li>
+	<li>email: <a href="mailto:spidersbuzz@gmail.com"</a></li>
+	</ul>
+	<img src="assets/images/image_1.jpg"></p>
+	</section>
+	
 
-	<div class="cd-faq-items">
-		<ul id="install_theme" class="cd-faq-group">
-			<li class="cd-faq-title"><h2>Install Theme</h2></li>
-			<li>
-			<a class="cd-faq-trigger" href="#0">Get Started</a>
-			<div class="cd-faq-content">
-				<p>Thank you very much for choosing our theme. We truly appreciate and really hope that you'll enjoy our theme! If you like this theme, Please support us by rating us 5 stars. Thanks You.</p>
-				<p>eBlog Lite - The best Wordpress  theme for online All Type of Online Blog . Eg Blog Theme</p>
-				<p>It comes with a lot of great features that would take you months to develop. It is fully responsive, it looks stunning on all types of screens and devices. Including easy to set up for  Contact Form ...</p>
-				<p>Theme fully based on Magazine or Blogs </p>
-				
-			</div> <!-- cd-faq-content -->
-			</li>	
-			
-			<li>
-			<a class="cd-faq-trigger" href="#0">Installing the theme</a>
-			<div class="cd-faq-content">
-				<p>There are two methods to install oStore Pro Wordpress Theme.  You may either upload the zipped theme file using the WordPress theme installer (Recommended), or you can upload the unzipped theme folder via FTP (Advanced).</p>			
-				
-				<h3>Method 1 ( Recommended): Install Using the WordPress Theme Installer</h3>
-				<ol>
-					<p><li>1. Log into your WordPress site and opens the Admin Panel. &nbsp;&#39;<strong>Admin Panel</strong>&#39; .</li></p>
-					<p><li>2. Go to Appearance > Themes in the WordPress Dashboard.</li></p>
-					<p><a href="image/appearance-add.png" class="lightbox"><img alt="" src="image/appearance-add.png" style=""></a></p>
-					<p><li>3. Click on the Upload button.</li></p>
-					<p><li>4. Click Install Now.</li></p>
-					<p><a href="images/installation.png" class="lightbox"><img alt="" src="images/installation.png" style=""></a></p>
-					
-				</ol>
+<section id="theme_installation">
+	<div class="page-header"><h3>Theme Installation</h3><hr class="notop"></div>
+<p>
+	<span style="color: rgb(96, 96, 96); font-family: Arial, verdana, arial, sans-serif; font-size: 18px; background-color: rgb(224, 228, 204);">There are two methods to install&nbsp;</span><span style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-weight: 700; font-size: 18px; font-family: Arial, verdana, arial, sans-serif; vertical-align: baseline; color: rgb(96, 96, 96); background-color: rgb(224, 228, 204);">Personal Info</span><span style="color: rgb(96, 96, 96); font-family: Arial, verdana, arial, sans-serif; font-size: 18px; background-color: rgb(224, 228, 204);">&nbsp;theme.&nbsp; You may either upload the zipped theme file using the WordPress theme installer (Recommended), or you can upload the unzipped theme folder via FTP (Advanced).</span></p>
+<p>
+	&nbsp;</p>
+<p>
+	&nbsp;</p>
+<h2 class="theme-docs-title" itemprop="headline" style="margin: 0px 0px 18px; padding: 0px 0px 11px 11px; border-width: 0px 0px 1px; border-top-style: initial; border-right-style: initial; border-bottom-style: solid; border-left-style: initial; border-top-color: initial; border-right-color: initial; border-bottom-color: rgb(225, 225, 225); border-left-color: initial; border-image: initial; outline: 0px; font-weight: 100; font-size: 20px; font-family: Arial, verdana, arial, sans-serif; vertical-align: baseline; color: rgb(96, 96, 96);">
+	Method 1 ( Recommended) : Install Using the WordPress Theme Installer</h2>
+<div class="docs-desc-wrap" style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-family: Arial, verdana, arial, sans-serif; vertical-align: baseline; color: rgb(61, 34, 12);">
+	<ol class="docs-step" style="margin: 18px 0px; padding-right: 0px; padding-left: 0px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-family: inherit; vertical-align: baseline; line-height: 1.5em;">
+		<li style="margin: 0px 0px 0px 36px; padding: 0px 0px 2px 7px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-size: 16px; font-family: inherit; vertical-align: baseline; list-style: decimal; color: rgb(113, 113, 113); line-height: 25px;">
+			Log into your WordPress site and opens the Administration Panel.</li>
+		<li style="margin: 0px 0px 0px 36px; padding: 0px 0px 2px 7px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-size: 16px; font-family: inherit; vertical-align: baseline; list-style: decimal; color: rgb(113, 113, 113); line-height: 25px;">
+			Go to Appearance &gt; Themes in the WordPress Dashboard.</li>
+		<li style="margin: 0px 0px 0px 36px; padding: 0px 0px 2px 7px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-size: 16px; font-family: inherit; vertical-align: baseline; list-style: decimal; color: rgb(113, 113, 113); line-height: 25px;">
+			Click on the Add New button.</li>
+		<li style="margin: 0px 0px 0px 36px; padding: 0px 0px 2px 7px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-size: 16px; font-family: inherit; vertical-align: baseline; list-style: decimal; color: rgb(113, 113, 113); line-height: 25px;">
+			Upload Personal-Info.zip file form your local drive where you have save.</li>
+		<li style="margin: 0px 0px 0px 36px; padding: 0px 0px 2px 7px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-size: 16px; font-family: inherit; vertical-align: baseline; list-style: decimal; color: rgb(113, 113, 113); line-height: 25px;">
+			Click Install Now</li>
+	</ol>
 
-				<h3>Method 2: Install Using File Transfer Protocol (FTP)</h3>
-				<ol>
-					<p><li>1. Unzip “eblog-lite.zip” file on your computer</li></p>
-					<p><li>2. Login using FTP client to access your host web server.</li></p>
-					<p><li>3. Locate the wp-content folder in your WordPress install files.</li></p>
-					<p><li>4. Upload the un-zipped eBlog Lite folder into the: wp-content/themes folder.</li></p>
-					
-				</ol>
+	<p style="margin: 0px 0px 0px 36px; padding: 0px 0px 2px 7px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-size: 16px; font-family: inherit; vertical-align: baseline; list-style: decimal; color: rgb(113, 113, 113); line-height: 25px;">
+		&nbsp;</p>
+</div>
+<img src="assets/images/themeinstallation.jpg"></p>
+<h2 class="theme-docs-title" itemprop="headline" style="margin: 0px 0px 18px; padding: 0px 0px 11px 11px; border-width: 0px 0px 1px; border-top-style: initial; border-right-style: initial; border-bottom-style: solid; border-left-style: initial; border-top-color: initial; border-right-color: initial; border-bottom-color: rgb(225, 225, 225); border-left-color: initial; border-image: initial; outline: 0px; font-weight: 100; font-size: 20px; font-family: Arial, verdana, arial, sans-serif; vertical-align: baseline; color: rgb(96, 96, 96);">
+	Method 2: Install Using File Transfer Protocol (FTP)</h2>
+<div class="docs-desc-wrap" style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-family: Arial, verdana, arial, sans-serif; vertical-align: baseline; color: rgb(61, 34, 12);">
+	<ol class="docs-step" style="margin: 18px 0px; padding-right: 0px; padding-left: 0px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-family: inherit; vertical-align: baseline; line-height: 1.5em;">
+		<li style="margin: 0px 0px 0px 36px; padding: 0px 0px 2px 7px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-size: 16px; font-family: inherit; vertical-align: baseline; list-style: decimal; color: rgb(113, 113, 113); line-height: 25px;">
+			Unzip &ldquo;Personal-Info.zip&rdquo; file on your computer.</li>
+		<li style="margin: 0px 0px 0px 36px; padding: 0px 0px 2px 7px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-size: 16px; font-family: inherit; vertical-align: baseline; list-style: decimal; color: rgb(113, 113, 113); line-height: 25px;">
+			Login using FTP client to access your host web server.</li>
+		<li style="margin: 0px 0px 0px 36px; padding: 0px 0px 2px 7px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-size: 16px; font-family: inherit; vertical-align: baseline; list-style: decimal; color: rgb(113, 113, 113); line-height: 25px;">
+			Locate the wp-content folder in your WordPress install files.</li>
+		<li style="margin: 0px 0px 0px 36px; padding: 0px 0px 2px 7px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-size: 16px; font-family: inherit; vertical-align: baseline; list-style: decimal; color: rgb(113, 113, 113); line-height: 25px;">
+			Upload the un-zipped&nbsp;<span class="folder-link" style="margin: 0px 5px; padding: 3px 4px; border: 0px; outline: 0px; font-style: inherit; font-family: inherit; vertical-align: baseline; background: none 0px 0px repeat scroll rgb(68, 157, 68); border-radius: 5px; color: rgb(255, 255, 255);">&nbsp;Personal Info</span>&nbsp;folder into the: wp-content/themes folder.</li>
+	</ol>
+	<h2 class="theme-docs-title" itemprop="headline" style="margin: 0px 0px 18px; padding: 0px 0px 11px 11px; border-width: 0px 0px 1px; border-top-style: initial; border-right-style: initial; border-bottom-style: solid; border-left-style: initial; border-top-color: initial; border-right-color: initial; border-bottom-color: rgb(225, 225, 225); border-left-color: initial; border-image: initial; outline: 0px; font-weight: 100; font-size: 20px; vertical-align: baseline; color: rgb(96, 96, 96);">
+		Activate the theme</h2>
+	<div class="docs-desc-wrap" style="margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: baseline;">
+		<ol class="docs-step" style="margin: 18px 0px; padding-right: 0px; padding-left: 0px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-family: inherit; vertical-align: baseline; line-height: 1.5em;">
+			<li style="margin: 0px 0px 0px 36px; padding: 0px 0px 2px 7px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-size: 16px; font-family: inherit; vertical-align: baseline; list-style: decimal; color: rgb(113, 113, 113); line-height: 25px;">
+				Log in to the WordPress Administration Panel.</li>
+			<li style="margin: 0px 0px 0px 36px; padding: 0px 0px 2px 7px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-size: 16px; font-family: inherit; vertical-align: baseline; list-style: decimal; color: rgb(113, 113, 113); line-height: 25px;">
+				Go to Appearance &gt; Themes in the WordPress menu</li>
+			<li style="margin: 0px 0px 0px 36px; padding: 0px 0px 2px 7px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-size: 16px; font-family: inherit; vertical-align: baseline; list-style: decimal; color: rgb(113, 113, 113); line-height: 25px;">
+				Hover over the theme thumbnail and click the Activate button.</li>
+		</ol>
+		<h2 class="theme-docs-title" itemprop="headline" style="margin: 0px; padding: 0px 0px 11px 11px; border: 0px; outline: 0px; font-weight: 100; font-size: 20px; vertical-align: baseline; color: rgb(96, 96, 96);">
+			Additional information :&nbsp;<a href="https://codex.wordpress.org/Using_Themes" style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-family: inherit; vertical-align: baseline; color: rgb(243, 134, 48); text-decoration-line: none; cursor: pointer;" target="_blank">WordPress Codex &ndash; Using Themes</a></h2>
+	</div>
+</div>
 
-				<h3>Activate the theme</h3>
-				<ol>
-					<p><li>1. Log in to the WordPress Admin Panel.</li></p>
-					<p><li>2. Go to Appearance > Themes in the WordPress menu.</li></p>
-					<p><li>3. Hover over the theme thumbnail and click the Activate button..</li></p>
-					
-				</ol>
-			</div> <!-- cd-faq-content -->
-			</li>
-
-			<li>
-			<a class="cd-faq-trigger" href="#">Installing Plugins</a>
-			<div class="cd-faq-content">	
-				
-				<h3>Plugin Installing Method</h3>
-				<ol>
-					<p><li>1. Log into your WordPress site and opens the Admin Panel.</li></p>
-					<p><li>2. Click Navigate to Plugins > Add New in the WordPress Dashboard.</li></p>
-					<p><li>3. Search for the name of the plugin you wish to install which will return a list of potential plugins.</li></p>
-					<p><li>4. Click Details to read more about a plugin</li></p>
-					<p><li>5. Click “Install Now” if you wish to install the plugin.</li></p>
-					<p><li>6. It may ask if you are sure, and you may proceed. The installation will commence once you confirm to proceed..</li></p>
-					<p><a href="images/plugin-install.png" class="lightbox"><img alt="" src="images/plugin-install.png" style=""></a></p>
-				</ol>
-
-				<h3>Recommended Plugins : We recommend you to download the following plugins when necessary:</h3>
-				<ol>
-					<p><li>1. <a href=""> Google Fonts</a> </li></p>
-					
-					<p><a href="images/plugin-install.png" class="lightbox"><img alt="" src="images/plugin-install.png" style=""></a></p>
-				</ol>
-
-			</div> 
-			</li>
-			
-		</ul> 
-		
-		
-		<ul id="menu_config" class="cd-faq-group">
-			<li class="cd-faq-title"><h2>Menu Settings</h2></li>
-			<li>
-				<a class="cd-faq-trigger" href="#0">Menu Settings</a>
-				<div class="cd-faq-content">
-					<h4>By default, the menus will fallback to Pages. That means just after activation of the theme, you will see all the pages as menus. If you want selective menus with combination of links, pages, categories then custom menu is what you should be looking for.</h4>
-					<p>1.Log into your WordPress site and opens the Admin Panel. </p>
-					<p>2.Go to Appearance > Menus in the WordPress menu. </p>
-					<p>3.Click on Create a new menu link. </p>
-					<p>4.Give a name to your menu in Menu Name and click Create Menu button. </p>
-					<p>5.Now choose the pages, categories, custom links from the left side of your screen by selecting the checkbox and click on Add Menu. </p>
-					<p>6.Choose the menu Theme Location per as requirement. </p>
-					<p>7.Click Save Menu after adding required pages, categories in the menu. </p>
-					<p><a href="images/menu-section.png" class="lightbox"><img alt="" src="images/menu-section.png" style=""></a></p>
-				</div>
-			</li>
-			
-			
-		</ul>
-		
-		<ul id="customizer_settings" class="cd-faq-group">
-
-			<li class="cd-faq-title"><h2>Customizer Settings</h2></li>
-			<li>
-				<a class="cd-faq-trigger" href="#0">General</a>
-				<div class="cd-faq-content">
-
-					<h3><strong>Logo/Site Title/Favicon (To set up Site Identity)</strong></h3>
-					<p>1.Go to Appearance> Customize > General Settings > Site Identity</p>
-					<p>2.Click Select logo by clicking Select Logo</p>
-					<p>3.Upload and select the desired image.</p>
-					<p>4.Enter the Site Title and Tagline</p>
-					<p>5.Check Display Header Text for the Site title and Tagline to appear on your homepage.</p>
-					<p>6.Click Select Image under Site Icon</p>
-					<p>Upload and select the desired image. <strong>(The Site Icon/ favicon is used as a browser and app icon for your site. The recommended Site Icon size is 512*512 pixels.)</strong></p>
-					<p>Click Save & Publish.</p>
-					<p><a href="images/blog-default.png" class="lightbox"><img alt="" src="images/blog-default.png"></a></p>
-					
-					<h3><strong>Colors</strong></h3>
-					<p>1.Go to Appearance > Customize > General Settings > Colors</p>
-					<p>2.Change the <strong> Background Color</strong> by clicking on the respective Select Color button</p>
-					<p>3.Click Save & Publish.</p>
-					<p><a href="images/color.png" class="lightbox"><img alt="" src="images/color.png"></a></p>
-					
-					<h3><strong>Background Image</strong></h3>
-					<p>1.Go to Appearance > Customize > General Settings > Background Image</p>
-					<p>2.Click Select Image.</p>
-					<p>3.Upload and Select a Background Image & Manage the image position & other settings.</p>
-					<p>4.Click Save & Publish.</p>
-					<p><a href="images/background-images.png" class="lightbox"><img alt="" src="images/background-images.png"></a></p>
-					
-					<h3><strong>To set the Header Image</strong></h3>
-					<p>1.Go to Appearance > Customize > General Settings > Header Image</p>
-					<p>2.Upload the header image from the Add new image button. After selecting the header image, it will ask you to crop. If you like to crop it, then, you can crop else leave it as you want for your site to best suit it..</p>
-					<p>3.Click Save & Publish..</p>
-					<p><a href="images/header-image.png" class="lightbox"><img alt="" src="images/header-image.png"></a></p>
-				</div> 
-			</li>
-			
-			
-			<li>
-				<a class="cd-faq-trigger" href="#0">Social Links</a>
-					<div class="cd-faq-content">
-						<h3><strong>Social Links</strong></h3>
-						<p>1.Log into your WordPress site and opens the Admin Panel.</p>
-						<p>2.Go to Dashboard > Appearance > Customize.</p>
-						<p>3.Open > Footer Settings > Social Links </p>
-						<p>4.Enable / Disable Social Links</p>
-						<p>5.Add All Social Links</p>
-						<p>6.Click Save & Publish.</p>
-						<p><a href="image/social-links.png" class="lightbox"><img alt="" src="image/social-links.png"></a></p>
-						
-
-						<h3><strong>Button Footer Social Links</strong></h3>
-						<p>1.Log into your WordPress site and opens the Admin Panel.</p>
-						<p>2.Go to Dashboard > Appearance > Customize.</p>
-						<p>3.Open > Footer Settings > Buttom Footer Section </p>
-						<p>4.Enable / Disable  Footer Social Links</p>
-						<p>6.Click Save & Publish.</p>
-						<p><a href="images/social-links.png" class="lightbox"><img alt="" src="images/social-links.png"></a></p>
-					</div>
-			</li>
-
-		</ul>
-		
-		
-		<ul id="support" class="cd-faq-group">
-			<li class="cd-faq-title"><h2>Support</h2></li>
-			<li>
-				<a class="cd-faq-trigger" href="#0">Support</a>
-				<div class="cd-faq-content">
-					<p>The team at Tea Theme are always happy to help you with any questions or recommendations you have about the eblog Lite theme.
-		            If you need any help or support please contact us through the forum or
-		             <br >Support Email: <a href="spiderbuzz@gmail.com">spiderbuzz@gmail.com</a>
-					</p>
-				</div> 
-			</li>
-		</ul>
-
-
-		<ul id="demo_import" class="cd-faq-group">
-			<li class="cd-faq-title"><h2>Demo Import</h2></li>
-			<li>
-				<a class="cd-faq-trigger" href="#0">Demo Import</a>
-				<div class="cd-faq-content">
-					<p>Install once click demo import plugins and contact us at
-		             <br> <a href="spiderbuzz@gmail.com">spiderbuzz@gmail.com</a> or from live chat, will guide you. 
-					</p>
-				</div> 
-			</li>
-		</ul>
-		
-	</div> 
-	<a href="#0" class="cd-close-panel">Close</a>
+<p>
+	&nbsp;</p>
 </section>
-<footer>
-	<div class="container">
-		<div class="copyright text-left w50">
-			<p>Copyright <a href="https://spiderbuzz.com/">Spiderbuzz.com</a> 2017.</p>
-		</div>
-		<div class="social text-right w50">
-			<ul>
-				<li><a href="#"></a></li>
-				<li><a href="#"></a></li>
-				<li><a href="#"></a></li>
-				<li><a href="#"></a></li>
-			</ul>
-		</div>
+<section id="installing_plugins">
+	<div class="page-header"><h3>Installing Plugins</h3><hr class="notop"></div>
+<p>
+	<span style="color: rgb(96, 96, 96); font-family: Arial, verdana, arial, sans-serif; font-size: 18px; background-color: rgb(224, 228, 204);">To install a plugin in your WordPress admin panel and follow the following steps.</span></p>
+<p>
+	&nbsp;</p>
+<h2 class="theme-docs-title" style="margin: 0px 0px 18px; padding: 0px 0px 11px 11px; border-width: 0px 0px 1px; border-top-style: initial; border-right-style: initial; border-bottom-style: solid; border-left-style: initial; border-top-color: initial; border-right-color: initial; border-bottom-color: rgb(225, 225, 225); border-left-color: initial; border-image: initial; outline: 0px; font-weight: 100; font-size: 20px; font-family: Arial, verdana, arial, sans-serif; vertical-align: baseline; color: rgb(96, 96, 96);">
+	Plugin Installing Method</h2>
+<div class="docs-desc-wrap" style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-family: Arial, verdana, arial, sans-serif; vertical-align: baseline; color: rgb(61, 34, 12);">
+	<ol class="docs-step" style="margin: 18px 0px; padding-right: 0px; padding-left: 0px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-family: inherit; vertical-align: baseline; line-height: 1.5em;">
+		<li style="margin: 0px 0px 0px 36px; padding: 0px 0px 2px 7px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-size: 16px; font-family: inherit; vertical-align: baseline; list-style: decimal; color: rgb(113, 113, 113); line-height: 25px;">
+			Log into your WordPress site and opens the Administration Panel.</li>
+		<li style="margin: 0px 0px 0px 36px; padding: 0px 0px 2px 7px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-size: 16px; font-family: inherit; vertical-align: baseline; list-style: decimal; color: rgb(113, 113, 113); line-height: 25px;">
+			Click Navigate to Plugins &gt; Add New in the WordPress Dashboard.</li>
+		<li style="margin: 0px 0px 0px 36px; padding: 0px 0px 2px 7px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-size: 16px; font-family: inherit; vertical-align: baseline; list-style: decimal; color: rgb(113, 113, 113); line-height: 25px;">
+			Search for the name of the plugin you wish to install which will return a list of potential plugins.</li>
+		<li style="margin: 0px 0px 0px 36px; padding: 0px 0px 2px 7px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-size: 16px; font-family: inherit; vertical-align: baseline; list-style: decimal; color: rgb(113, 113, 113); line-height: 25px;">
+			Click Details to read more about a plugin.</li>
+		<li style="margin: 0px 0px 0px 36px; padding: 0px 0px 2px 7px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-size: 16px; font-family: inherit; vertical-align: baseline; list-style: decimal; color: rgb(113, 113, 113); line-height: 25px;">
+			Click &ldquo;Install Now&rdquo; if you wish to install the plugin.</li>
+		<li style="margin: 0px 0px 0px 36px; padding: 0px 0px 2px 7px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-size: 16px; font-family: inherit; vertical-align: baseline; list-style: decimal; color: rgb(113, 113, 113); line-height: 25px;">
+			It may ask if you are sure, and you may proceed. The installation will commence once you confirm to proceed.</li>
+		<li style="margin: 0px 0px 0px 36px; padding: 0px 0px 2px 7px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-size: 16px; font-family: inherit; vertical-align: baseline; list-style: decimal; color: rgb(113, 113, 113); line-height: 25px;">
+			After the plugin is downloaded. Go to Plugins&gt;Installed Plugins. Click &ldquo;Activate Plugin&rdquo; to make it available for use.</li>
+	</ol>
+	<img src="assets/images/installingplugins.jpg"></p>
+	<p style="margin: 0px 0px 0px 36px; padding: 0px 0px 2px 7px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-size: 16px; font-family: inherit; vertical-align: baseline; list-style: decimal; color: rgb(113, 113, 113); line-height: 25px;">
+		&nbsp;</p>
+	<h2 class="theme-docs-title" itemprop="headline" style="margin: 0px 0px 18px; padding: 0px 0px 11px 11px; border-width: 0px 0px 1px; border-top-style: initial; border-right-style: initial; border-bottom-style: solid; border-left-style: initial; border-top-color: initial; border-right-color: initial; border-bottom-color: rgb(225, 225, 225); border-left-color: initial; border-image: initial; outline: 0px; font-weight: 100; font-size: 20px; vertical-align: baseline; color: rgb(96, 96, 96);">
+		Recommended Plugins : We recommend you to download the following plugins when necessary:</h2>
+	<div class="docs-desc-wrap" style="margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: baseline;">
+		<ol class="docs-step" style="margin: 18px 0px; padding-right: 0px; padding-left: 0px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-family: inherit; vertical-align: baseline; line-height: 1.5em;">
+			<li style="margin: 0px 0px 0px 36px; padding: 0px 0px 2px 7px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-size: 16px; font-family: inherit; vertical-align: baseline; list-style: decimal; color: rgb(113, 113, 113); line-height: 25px;">
+				<a href="https://wordpress.org/plugins/menu-image/"><font color="#f38630" face="inherit"><span style="border-style: initial; border-color: initial; border-image: initial; outline-color: initial; outline-style: initial; font-weight: inherit; font-style: inherit; cursor: pointer;">Menu Image</span></font></a>&nbsp;by WordPress.com, by:&nbsp;&nbsp;<span class="author vcard" style="box-sizing: inherit; color: rgb(120, 132, 143); font-family: &quot;Open Sans&quot;, sans-serif; font-size: 18px;"><font color="#0073aa"><span style="box-sizing: inherit; outline-color: initial; outline-style: initial;">Alex Davyskiba aka Zvir</span></font> <font color="#0073aa"><span style="box-sizing: inherit; outline-color: initial; outline-style: initial;">yatko</span></font>&nbsp;&nbsp;</span>Adds a field to load the image in a menu item and displays the image inside the link in the menu before the text.</li>
+			<li style="margin: 0px 0px 0px 36px; padding: 0px 0px 2px 7px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-size: 16px; font-family: inherit; vertical-align: baseline; list-style: decimal; color: rgb(113, 113, 113); line-height: 25px;">
+				<a href="https://wordpress.org/plugins/contact-form-7/"><font color="#f38630" face="inherit"><span style="border-style: initial; border-color: initial; border-image: initial; outline-color: initial; outline-style: initial; font-weight: inherit; font-style: inherit; cursor: pointer;">Contact Form 7</span></font></a><font color="#f38630" face="inherit"><span style="border-style: initial; border-color: initial; border-image: initial; outline-color: initial; outline-style: initial; font-weight: inherit; font-style: inherit; cursor: pointer;">&nbsp;</span></font>&nbsp;by&nbsp;<a class="url fn n" href="https://ideasilo.wordpress.com/" rel="nofollow" style="box-sizing: inherit; color: rgb(0, 115, 170); outline: 0px; font-family: &quot;Open Sans&quot;, sans-serif; font-size: 18px;">Takayuki Miyoshi</a>&nbsp;(<span style="color: rgb(68, 68, 68); font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Oxygen-Sans, Ubuntu, Cantarell, &quot;Helvetica Neue&quot;, sans-serif; font-size: 14px;">Contact Form 7 can manage multiple contact forms, plus you can customize the form and the mail contents flexibly with simple markup. The form supports Ajax-powered submitting, CAPTCHA, Akismet spam filtering and so on.</span>)</li>
+			<li style="margin: 0px 0px 0px 36px; padding: 0px 0px 2px 7px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-size: 16px; font-family: inherit; vertical-align: baseline; list-style: decimal; color: rgb(113, 113, 113); line-height: 25px;">
+				<a href="https://wordpress.org/plugins/meta-box/"><font color="#f38630" face="inherit"><span style="border-style: initial; border-color: initial; border-image: initial; outline-color: initial; outline-style: initial; font-weight: inherit; font-style: inherit; cursor: pointer;">Meta Box Plugin</span></font></a>&nbsp;by:&nbsp;<a href="https://metabox.io/">MetaBox.io</a> (<span style="font-weight: 600; color: rgb(68, 68, 68); font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Oxygen-Sans, Ubuntu, Cantarell, &quot;Helvetica Neue&quot;, sans-serif; font-size: 14px; -webkit-tap-highlight-color: rgba(0, 0, 0, 0) !important;">Meta Box plugin is a powerful, professional toolkit for developers to create and handle everything related to custom meta boxes and custom fields for WordPress.</span>)</li>
+		</ol>
+		<p style="margin: 0px 0px 0px 36px; padding: 0px 0px 2px 7px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-size: 16px; font-family: inherit; vertical-align: baseline; list-style: decimal; color: rgb(113, 113, 113); line-height: 25px;">
+			&nbsp;</p>
 	</div>
-</footer>
-<script src="js/jquery-2.1.1.js"></script>
-<script src="js/jquery.mobile.custom.min.js"></script>
-<script src="js/fitVids.min.js"></script>
-<script src="js/magnific-popup.min.js"></script>
-<script src="js/main.js"></script> <!-- Resource jQuery -->
+</div>
+
+</section>
+<section id="general_settings">
+	<div class="page-header"><h3>General Settings</h3><hr class="notop"></div>
+<div class="docsblock" style="margin: 27px 0px 0px; padding: 13px 0px 1px; border: 0px; outline: 0px; font-size: 18px; font-family: Arial, verdana, arial, sans-serif; vertical-align: baseline; background: none 0px 0px repeat scroll rgb(246, 246, 246); color: rgb(96, 96, 96);">
+	<h2 class="theme-docs-title" itemprop="headline" style="margin: 0px 0px 18px; padding: 0px 0px 11px 11px; border-width: 0px 0px 1px; border-top-style: initial; border-right-style: initial; border-bottom-style: solid; border-left-style: initial; border-top-color: initial; border-right-color: initial; border-bottom-color: rgb(225, 225, 225); border-left-color: initial; border-image: initial; outline: 0px; font-weight: 100; font-style: inherit; font-size: 20px; font-family: inherit; vertical-align: baseline;">
+		Profile Image/Profile Title/Profile Profession/Favicon (To set up Site Identity)</h2>
+	<div class="docs-desc-wrap" style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-family: inherit; vertical-align: baseline;">
+		<ol class="docs-step" style="margin: 18px 0px; padding-right: 0px; padding-left: 0px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-family: inherit; vertical-align: baseline; line-height: 1.5em;">
+			<li style="margin: 0px 0px 0px 36px; padding: 0px 0px 2px 7px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-size: 16px; font-family: inherit; vertical-align: baseline; list-style: decimal; color: rgb(113, 113, 113); line-height: 25px;">
+				Go to Appearance&gt; Customize &gt; Site Identity</li>
+			<li style="margin: 0px 0px 0px 36px; padding: 0px 0px 2px 7px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-size: 16px; font-family: inherit; vertical-align: baseline; list-style: decimal; color: rgb(113, 113, 113); line-height: 25px;">
+				Click Select logo by clicking Select Logo.</li>
+			<li style="margin: 0px 0px 0px 36px; padding: 0px 0px 2px 7px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-size: 16px; font-family: inherit; vertical-align: baseline; list-style: decimal; color: rgb(113, 113, 113); line-height: 25px;">
+				Upload and select the desired image.</li>
+			<li style="margin: 0px 0px 0px 36px; padding: 0px 0px 2px 7px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-size: 16px; font-family: inherit; vertical-align: baseline; list-style: decimal; color: rgb(113, 113, 113); line-height: 25px;">
+				Enter the Profile Title and Tagline</li>
+			<li style="margin: 0px 0px 0px 36px; padding: 0px 0px 2px 7px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-size: 16px; font-family: inherit; vertical-align: baseline; list-style: decimal; color: rgb(113, 113, 113); line-height: 25px;">
+				Check Display Header Text for the Site title and Tagline to appear on your homepage.</li>
+			<li style="margin: 0px 0px 0px 36px; padding: 0px 0px 2px 7px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-size: 16px; font-family: inherit; vertical-align: baseline; list-style: decimal; color: rgb(113, 113, 113); line-height: 25px;">
+				Click Select Image under Site Icon</li>
+			<li style="margin: 0px 0px 0px 36px; padding: 0px 0px 2px 7px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-size: 16px; font-family: inherit; vertical-align: baseline; list-style: decimal; color: rgb(113, 113, 113); line-height: 25px;">
+				Upload and select the desired image. (The Site Icon/ favicon is used as a browser and app icon for your site. The recommended Site Icon size is 512*512 pixels.)</li>
+			<li style="margin: 0px 0px 0px 36px; padding: 0px 0px 2px 7px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-size: 16px; font-family: inherit; vertical-align: baseline; list-style: decimal; color: rgb(113, 113, 113); line-height: 25px;">
+				Click Save &amp; Publish.</li>
+		</ol>
+	</div>
+</div>
+<img src="assets/images/home.png" style="width: 100%;"></p>
+<p style="margin: 18px 0px; padding: 0px; border: 0px; outline: 0px; font-size: 18px; font-family: Arial, verdana, arial, sans-serif; vertical-align: baseline; line-height: 1.5em; color: rgb(96, 96, 96); background-color: rgb(224, 228, 204);">
+	&nbsp;</p>
+<h2 class="theme-docs-title" itemprop="headline" style="margin: 0px 0px 18px; padding: 0px 0px 11px 11px; border-width: 0px 0px 1px; border-top-style: initial; border-right-style: initial; border-bottom-style: solid; border-left-style: initial; border-top-color: initial; border-right-color: initial; border-bottom-color: rgb(225, 225, 225); border-left-color: initial; border-image: initial; outline: 0px; font-weight: 100; font-size: 20px; font-family: Arial, verdana, arial, sans-serif; vertical-align: baseline; color: rgb(96, 96, 96);">
+	Social Links&nbsp;</h2>
+<div class="docs-desc-wrap" style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-size: 18px; font-family: Arial, verdana, arial, sans-serif; vertical-align: baseline; color: rgb(96, 96, 96);">
+	<ol class="docs-step" style="margin: 18px 0px; padding-right: 0px; padding-left: 0px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-family: inherit; vertical-align: baseline; line-height: 1.5em;">
+		<li style="margin: 0px 0px 0px 36px; padding: 0px 0px 2px 7px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-size: 16px; font-family: inherit; vertical-align: baseline; list-style: decimal; color: rgb(113, 113, 113); line-height: 25px;">
+			Go to Appearance&gt; Customize &gt; Social Links</li>
+		<li style="margin: 0px 0px 0px 36px; padding: 0px 0px 2px 7px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-size: 16px; font-family: inherit; vertical-align: baseline; list-style: decimal; color: rgb(113, 113, 113); line-height: 25px;">
+			Fill all URL Field in these Section</li>
+	</ol>
+	<p style="margin: 0px 0px 0px 36px; padding: 0px 0px 2px 7px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-size: 16px; font-family: inherit; vertical-align: baseline; list-style: decimal; color: rgb(113, 113, 113); line-height: 25px;">
+		&nbsp;</p>
+		<img src="assets/images/social links.png" style="width: 100%;"></p>
+	<h2 class="theme-docs-title" itemprop="headline" style="margin: 0px 0px 18px; padding: 0px 0px 11px 11px; border-width: 0px 0px 1px; border-top-style: initial; border-right-style: initial; border-bottom-style: solid; border-left-style: initial; border-top-color: initial; border-right-color: initial; border-bottom-color: rgb(225, 225, 225); border-left-color: initial; border-image: initial; outline: 0px; font-weight: 100; font-size: 20px; vertical-align: baseline;">
+		Personal Info</h2>
+	<div class="docs-desc-wrap" style="margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: baseline;">
+		<ol class="docs-step" style="margin: 18px 0px; padding-right: 0px; padding-left: 0px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-family: inherit; vertical-align: baseline; line-height: 1.5em;">
+			<li style="margin: 0px 0px 0px 36px; padding: 0px 0px 2px 7px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-size: 16px; font-family: inherit; vertical-align: baseline; list-style: decimal; color: rgb(113, 113, 113); line-height: 25px;">
+				Go to Appearance&gt; Customize &gt; &nbsp;Personal Info</li>
+			<li style="margin: 0px 0px 0px 36px; padding: 0px 0px 2px 7px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-size: 16px; font-family: inherit; vertical-align: baseline; list-style: decimal; color: rgb(113, 113, 113); line-height: 25px;">
+				Enter the Phone No, Email and Address</li>
+		</ol>
+		<p style="margin: 0px 0px 0px 36px; padding: 0px 0px 2px 7px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-size: 16px; font-family: inherit; vertical-align: baseline; list-style: decimal; color: rgb(113, 113, 113); line-height: 25px;">
+			
+		<p style="margin: 0px 0px 0px 36px; padding: 0px 0px 2px 7px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-size: 16px; font-family: inherit; vertical-align: baseline; list-style: decimal; color: rgb(113, 113, 113); line-height: 25px;">
+			&nbsp;</p>
+	</div>
+	<p style="margin: 0px 0px 0px 36px; padding: 0px 0px 2px 7px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-size: 16px; font-family: inherit; vertical-align: baseline; list-style: decimal; color: rgb(113, 113, 113); line-height: 25px;">
+		&nbsp;</p>
+</div>
+<img src="assets/images/footer.png" style="width: 100%;"></p>
+
+</section>
+<section id="custom_menu">
+	<div class="page-header"><h3>Custom Menu</h3><hr class="notop"></div>
+<p>
+	<span style="color: rgb(96, 96, 96); font-family: Arial, verdana, arial, sans-serif; font-size: 18px; background-color: rgb(224, 228, 204);">By default, the menus will fallback to Pages. That means just after activation of the theme, you will see all the pages as menus. If you want selective menus with combination of links, pages, categories then custom menu is what you should be looking for.</span></p>
+
+<h2 class="theme-docs-title" itemprop="headline" style="margin: 0px 0px 18px; padding: 0px 0px 11px 11px; border-width: 0px 0px 1px; border-top-style: initial; border-right-style: initial; border-bottom-style: solid; border-left-style: initial; border-top-color: initial; border-right-color: initial; border-bottom-color: rgb(225, 225, 225); border-left-color: initial; border-image: initial; outline: 0px; font-weight: 100; font-size: 20px; font-family: Arial, verdana, arial, sans-serif; vertical-align: baseline; color: rgb(96, 96, 96);">
+	Set up Custom Menu</h2>
+<div class="docs-desc-wrap" style="margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: baseline;">
+	<ol class="docs-step" style="margin: 18px 0px; padding-right: 0px; padding-left: 0px; border: 0px; outline: 0px; vertical-align: baseline; line-height: 1.5em;">
+		<li style="color: rgb(113, 113, 113); font-family: inherit; font-style: inherit; font-weight: inherit; margin: 0px 0px 0px 36px; padding: 0px 0px 2px 7px; border: 0px; outline: 0px; font-size: 16px; vertical-align: baseline; list-style: decimal; line-height: 25px;">
+			Log into your WordPress site and opens the Administration Panel.</li>
+		<li style="color: rgb(113, 113, 113); font-family: inherit; font-style: inherit; font-weight: inherit; margin: 0px 0px 0px 36px; padding: 0px 0px 2px 7px; border: 0px; outline: 0px; font-size: 16px; vertical-align: baseline; list-style: decimal; line-height: 25px;">
+			Go to Appearance &gt; Menus in the WordPress menu</li>
+		<li style="color: rgb(113, 113, 113); font-family: inherit; font-style: inherit; font-weight: inherit; margin: 0px 0px 0px 36px; padding: 0px 0px 2px 7px; border: 0px; outline: 0px; font-size: 16px; vertical-align: baseline; list-style: decimal; line-height: 25px;">
+			Click on Create a new menu link</li>
+		<li style="color: rgb(113, 113, 113); font-family: inherit; font-style: inherit; font-weight: inherit; margin: 0px 0px 0px 36px; padding: 0px 0px 2px 7px; border: 0px; outline: 0px; font-size: 16px; vertical-align: baseline; list-style: decimal; line-height: 25px;">
+			Give a name to your menu in Menu Name and click Create Menu button</li>
+		<li style="color: rgb(113, 113, 113); font-family: inherit; font-style: inherit; font-weight: inherit; margin: 0px 0px 0px 36px; padding: 0px 0px 2px 7px; border: 0px; outline: 0px; font-size: 16px; vertical-align: baseline; list-style: decimal; line-height: 25px;">
+			Now choose the pages, categories, custom links from the leftside of your screen by selecting the checkbox and click on Add Menu</li>
+		<li style="color: rgb(113, 113, 113); font-family: inherit; font-style: inherit; font-weight: inherit; margin: 0px 0px 0px 36px; padding: 0px 0px 2px 7px; border: 0px; outline: 0px; font-size: 16px; vertical-align: baseline; list-style: decimal; line-height: 25px;">
+			Choose the menu Theme Location per as requirement.</li>
+		<li style="color: rgb(113, 113, 113); font-family: inherit; font-style: inherit; font-weight: inherit; margin: 0px 0px 0px 36px; padding: 0px 0px 2px 7px; border: 0px; outline: 0px; font-size: 16px; vertical-align: baseline; list-style: decimal; line-height: 25px;">
+			Click Save Menu after adding required pages, categories in the menu</li>
+		<li style="color: rgb(113, 113, 113); font-family: inherit; font-style: inherit; font-weight: inherit; margin: 0px 0px 0px 36px; padding: 0px 0px 2px 7px; border: 0px; outline: 0px; font-size: 16px; vertical-align: baseline; list-style: decimal; line-height: 25px;">
+			Add the <strong>Menu Image</strong></li>
+		<li style="color: rgb(113, 113, 113); font-family: inherit; font-style: inherit; font-weight: inherit; margin: 0px 0px 0px 36px; padding: 0px 0px 2px 7px; border: 0px; outline: 0px; font-size: 16px; vertical-align: baseline; list-style: decimal; line-height: 25px;">
+			Select the Image Size&nbsp;<strong>Thumbnail Size</strong></li>
+		<li style="margin: 0px 0px 0px 36px; padding: 0px 0px 2px 7px; border: 0px; outline: 0px; vertical-align: baseline; list-style: decimal; line-height: 25px;">
+			<span style="color: rgb(113, 113, 113); font-family: inherit; font-size: 16px; font-style: inherit;">Select the Title Position <strong>Below</strong></span></li>
+	</ol>
+	<img src="assets/images/menu images.png" style="width: 100%;"></p>
+	<p style="color: rgb(113, 113, 113); font-family: inherit; margin: 0px 0px 0px 36px; padding: 0px 0px 2px 7px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-size: 16px; vertical-align: baseline; list-style: decimal; line-height: 25px;">
+		&nbsp;</p>
+	<h2 class="theme-docs-title" itemprop="headline" style="color: rgb(96, 96, 96); font-family: Arial, verdana, arial, sans-serif; margin: 0px; padding: 0px 0px 11px 11px; border: 0px; outline: 0px; font-weight: 100; font-size: 20px; vertical-align: baseline;">
+		Additional information :&nbsp;<a href="https://en.support.wordpress.com/menus/" style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-family: inherit; vertical-align: baseline; color: rgb(243, 134, 48); text-decoration-line: none; cursor: pointer;" target="_blank">WordPress Custom Menu</a></h2>
+	<p style="color: rgb(113, 113, 113); font-family: inherit; margin: 0px 0px 0px 36px; padding: 0px 0px 2px 7px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-size: 16px; vertical-align: baseline; list-style: decimal; line-height: 25px;">
+		&nbsp;</p>
+</div>
+
+</section>
+<section id="profile_page">
+	<div class="page-header"><h3>Profile Page</h3><hr class="notop"></div>
+<h2 class="theme-docs-title" itemprop="headline" style="margin: 0px 0px 18px; padding: 0px 0px 11px 11px; border-width: 0px 0px 1px; border-top-style: initial; border-right-style: initial; border-bottom-style: solid; border-left-style: initial; border-top-color: initial; border-right-color: initial; border-bottom-color: rgb(225, 225, 225); border-left-color: initial; border-image: initial; outline: 0px; font-weight: 100; font-size: 20px; font-family: Arial, verdana, arial, sans-serif; vertical-align: baseline; color: rgb(96, 96, 96);">
+	Edit Profile Page</h2>
+<div class="docs-desc-wrap" style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-family: Arial, verdana, arial, sans-serif; vertical-align: baseline; color: rgb(61, 34, 12);">
+	<ol class="docs-step" style="margin: 18px 0px; padding-right: 0px; padding-left: 0px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-family: inherit; vertical-align: baseline; line-height: 1.5em;">
+		<li style="margin: 0px 0px 0px 36px; padding: 0px 0px 2px 7px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-size: 16px; font-family: inherit; vertical-align: baseline; list-style: decimal; color: rgb(113, 113, 113); line-height: 25px;">
+			Go To Profile Page Then</li>
+		<li style="margin: 0px 0px 0px 36px; padding: 0px 0px 2px 7px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-size: 16px; font-family: inherit; vertical-align: baseline; list-style: decimal; color: rgb(113, 113, 113); line-height: 25px;">
+			Add Some Content in a Porfile page Then.</li>
+		<li style="margin: 0px 0px 0px 36px; padding: 0px 0px 2px 7px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-size: 16px; font-family: inherit; vertical-align: baseline; list-style: decimal; color: rgb(113, 113, 113); line-height: 25px;">
+			&nbsp;Profile Metabox Fill Information</li>
+		<li style="margin: 0px 0px 0px 36px; padding: 0px 0px 2px 7px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-size: 16px; font-family: inherit; vertical-align: baseline; list-style: decimal; color: rgb(113, 113, 113); line-height: 25px;">
+			Then go, Way Of Working Metabox Add Title and Icon (Icon Always in&nbsp;<a href="http://fontawesome.io/icons/">Fonts awesome</a>)</li>
+		<li style="margin: 0px 0px 0px 36px; padding: 0px 0px 2px 7px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-size: 16px; font-family: inherit; vertical-align: baseline; list-style: decimal; color: rgb(113, 113, 113); line-height: 25px;">
+			Last One, What I am &nbsp;Doing Title and Icon&nbsp;(Icon Always in <a href="http://fontawesome.io/icons/">Fonts awesome</a>)</li>
+	</ol>
+		<img src="assets/images/profile.png" style="width: 100%;"></p>
+</div>
+
+</section>
+<section id="resume_page">
+	<div class="page-header"><h3>Resume Page</h3><hr class="notop"></div>
+<h2 class="theme-docs-title" itemprop="headline" style="margin: 0px 0px 18px; padding: 0px 0px 11px 11px; border-width: 0px 0px 1px; border-top-style: initial; border-right-style: initial; border-bottom-style: solid; border-left-style: initial; border-top-color: initial; border-right-color: initial; border-bottom-color: rgb(225, 225, 225); border-left-color: initial; border-image: initial; outline: 0px; font-weight: 100; font-size: 20px; font-family: Arial, verdana, arial, sans-serif; vertical-align: baseline; color: rgb(96, 96, 96);">
+	Edit Resume Page</h2>
+<div class="docs-desc-wrap" style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-family: Arial, verdana, arial, sans-serif; vertical-align: baseline; color: rgb(61, 34, 12);">
+	<ol class="docs-step" style="padding-right: 0px; padding-left: 0px; margin: 18px 0px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-family: inherit; vertical-align: baseline; line-height: 1.5em;">
+		<li style="margin: 0px 0px 0px 36px; padding: 0px 0px 2px 7px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-size: 16px; font-family: inherit; vertical-align: baseline; list-style: decimal; color: rgb(113, 113, 113); line-height: 25px;">
+			Go To Resume Page Then</li>
+		<li style="margin: 0px 0px 0px 36px; padding: 0px 0px 2px 7px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-size: 16px; font-family: inherit; vertical-align: baseline; list-style: decimal; color: rgb(113, 113, 113); line-height: 25px;">
+			Add Some Content in a Resume page Then.</li>
+		<li style="margin: 0px 0px 0px 36px; padding: 0px 0px 2px 7px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-size: 16px; font-family: inherit; vertical-align: baseline; list-style: decimal; color: rgb(113, 113, 113); line-height: 25px;">
+			&nbsp;<strong>Work Metabox</strong> Fill Information</li>
+		<li style="margin: 0px 0px 0px 36px; padding: 0px 0px 2px 7px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-size: 16px; font-family: inherit; vertical-align: baseline; list-style: decimal; color: rgb(113, 113, 113); line-height: 25px;">
+			Then go, <strong>Softskill Metabox</strong> Add Title and value ( 0 to 100 Values in Percentage )</li>
+		<li style="margin: 0px 0px 0px 36px; padding: 0px 0px 2px 7px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-size: 16px; font-family: inherit; vertical-align: baseline; list-style: decimal; color: rgb(113, 113, 113); line-height: 25px;">
+			Then, Hardskills Metabox Add Title and value ( 0 to 100 Values in Percentage )</li>
+		<li style="margin: 0px 0px 0px 36px; padding: 0px 0px 2px 7px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-size: 16px; font-family: inherit; vertical-align: baseline; list-style: decimal; color: rgb(113, 113, 113); line-height: 25px;">
+			Then Another, <strong>Hobbies and Intrest Metabox&nbsp;</strong> Add the Title and Icon. (Icon Always in&nbsp;<a href="http://fontawesome.io/icons/">Fonts awesome</a>)</li>
+		<li style="margin: 0px 0px 0px 36px; padding: 0px 0px 2px 7px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-size: 16px; font-family: inherit; vertical-align: baseline; list-style: decimal; color: rgb(113, 113, 113); line-height: 25px;">
+			Last One, <strong>Education Metabox</strong>&nbsp;Fill all information this filed</li>
+	</ol>
+	<img src="assets/images/resume.png" style="width: 100%;"></p>
+	
+</div>
+
+</section>
+<section id="contact_us_page">
+	<div class="page-header"><h3>Contact Us Page</h3><hr class="notop"></div>
+<h2 class="theme-docs-title" itemprop="headline" style="margin: 0px 0px 18px; padding: 0px 0px 11px 11px; border-width: 0px 0px 1px; border-top-style: initial; border-right-style: initial; border-bottom-style: solid; border-left-style: initial; border-top-color: initial; border-right-color: initial; border-bottom-color: rgb(225, 225, 225); border-left-color: initial; border-image: initial; outline: 0px; font-weight: 100; font-size: 20px; font-family: Arial, verdana, arial, sans-serif; vertical-align: baseline; color: rgb(96, 96, 96);">
+	Edit Contact Us Page</h2>
+<div class="docs-desc-wrap" style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-family: Arial, verdana, arial, sans-serif; vertical-align: baseline;">
+	<ol class="docs-step" style="color: rgb(61, 34, 12); padding-right: 0px; padding-left: 0px; margin: 18px 0px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-family: inherit; vertical-align: baseline; line-height: 1.5em;">
+		<li style="margin: 0px 0px 0px 36px; padding: 0px 0px 2px 7px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-size: 16px; font-family: inherit; vertical-align: baseline; list-style: decimal; color: rgb(113, 113, 113); line-height: 25px;">
+			Go To Contact Us Page Then</li>
+		<li style="margin: 0px 0px 0px 36px; padding: 0px 0px 2px 7px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-size: 16px; font-family: inherit; vertical-align: baseline; list-style: decimal; color: rgb(113, 113, 113); line-height: 25px;">
+			&nbsp;SpiderBuzz &nbsp;&nbsp;<strong> Contact&nbsp;Metabox</strong>&nbsp;Fill Information</li>
+		<li style="margin: 0px 0px 0px 36px; padding: 0px 0px 2px 7px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-size: 16px; font-family: inherit; vertical-align: baseline; list-style: decimal; color: rgb(113, 113, 113); line-height: 25px;">
+			Then go To, Contact Section and Edit Contact form and Add This code</li>
+		<li style="margin: 0px 0px 0px 36px; padding: 0px 0px 2px 7px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-size: 16px; font-family: inherit; vertical-align: baseline; list-style: decimal; color: rgb(113, 113, 113); line-height: 25px;">
+			Then, copy the Shortcode and Pest in Contact Page Content Field</li>
+	</ol>
+	<img src="assets/images/contact.png" style="width: 100%;"></p>
+	<p style="margin: 0px 0px 0px 36px; padding: 0px 0px 2px 7px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-size: 16px; font-family: inherit; vertical-align: baseline; list-style: decimal; color: rgb(113, 113, 113); line-height: 25px;">
+		&nbsp;</p>
+	<div style="">
+		&nbsp;</div>
+</div>
+<p>
+	&nbsp;</p>
+</section>
+
+	</div>
 </body>
-</html>>
+</html>
